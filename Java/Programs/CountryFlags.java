@@ -65,14 +65,14 @@ public class CountryFlags {
     public static void main(String[] args) {  
         JFrame f=new JFrame("Button Example");  
 
-        final JTextField tf=new JTextField();  
+        JTextField tf=new JTextField();  
         tf.setBounds(50,50, 150,20);  
 
-        JButton b=new JButton(new ImageIcon("C:\\Users\\VASANTH\\OneDrive\\India-Flag-PNG-Free-Download.png"));  
-        b.setBounds(50,100,100,100);  
+        JButton b=new JButton(new ImageIcon("C:\\Users\\VASANTH\\OneDrive\\India2.png"));  
+        b.setBounds(50,100,200,200);  
 
         b.addActionListener(new ActionListener(){  
-        public void actionPerformed(ActionEvent e){  
+            public void actionPerformed(ActionEvent e){  
                 tf.setText("India");  
             }  
         });  
@@ -80,6 +80,20 @@ public class CountryFlags {
         f.add(b);
         f.add(tf);  
 
+        JTextField tf1 = new JTextField();
+        tf1.setBounds(200, 50, 150, 30);
+
+        JButton b1 = new JButton(new ImageIcon("C:\\Users\\VASANTH\\OneDrive\\America.png"));
+        b1.setBounds(250, 80, 200, 200);
+
+        b1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+                tf1.setText("America");
+            }
+        });
+
+        f.add(b1);
+        f.add(tf1);
         f.setSize(400,400);  
         f.setLayout(null);  
         f.setVisible(true);   
